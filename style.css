@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width: 601px){
+  
+.nav-bar {
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    font-size: 15px;
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.nar-bar-item {
+    min-width: max-content;
+    padding: 0 16px;
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    height: 53.5px;
+}
+
+.nar-bar-item>p {
+    margin-top: 14px;
+}
+
+.nar-bar-item:hover {
+    background-color: #000;
+}
+
+.no-dropdown {
+    cursor: pointer;
+}
+
+.dropdown-icon {
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 53.5px;
+    left: 0;
+    color: black;
+    background-color: white;
+    min-width: 160px;
+    display: none;
+}
+
+.nar-bar-item:hover .dropdown-menu {
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu>a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+    display: block;
+}
+
+.dropdown-menu>a:hover {
+    background-color: #ddd;
+}
+
+.main {
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #2b6777;
+}
+
+.header {
+    padding: 0 16px 10px 16px;
+    text-align: center;
+    color: #fff;
+    height: 122.5px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-image: url(./img/star.png);
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-position-x: 16px;
+}
+
+.header-title>h1 {
+    font-size: 3em;
+}
+
+.header-title>h2 {
+    font-size: 2em;
+}
+
+.container {
+    background-color: #fff;
+    color: #000;
+    padding: 0 182px;
+    text-align: center;
+}
+
+.container-title {
+    text-align: center;
+    color: #000;
+    font-size: 2.5em;
+    font-weight: bolder;
+    padding: 40px 0 100px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.container-content {
+    background-color: #fff;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+}
+
+.container-content>p {
+    padding: 10px 0;
+}
+
+.order-content {
+    margin-left: 40px;
+}
+
+.order-content>li {
+    padding-bottom: 10px;
+}
+
+.order-content>ul {
+    margin-left: 40px;
+}
+
+.order-content>p {
+    padding: 10px 0;
+}
+
+.order-content>p>a {
+    padding: 10px 0;
+    color: #000;
+}  
+}
+
+@media(max-width: 600px){
+    .dropdown-icon {
+        display: none;
+    }
+}
